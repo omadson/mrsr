@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "mrsr"
+version = "1.1.0"
+description = ""
+authors = ["Madson Dias <madsonddias@gmail.com>"]
+
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/omadson/mrsr"
+repository = "https://github.com/omadson/mrsr"
+keywords = ["machine-learning", "data-science", "mrsr", "sparse-regression"]
+classifiers = [
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+include = [
+    "LICENSE",
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+numpy = "^1.15.4"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry>=0.12", "poetry-dynamic-versioning"]
+build-backend = "poetry.masonry.api"
+
+[tool.poetry-dynamic-versioning]
+enable = true
